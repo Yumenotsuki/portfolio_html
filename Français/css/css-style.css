@@ -1,0 +1,523 @@
+html {
+  font-size: 100%;
+  line-height: 1.6;
+  height: 100%;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  text-align: center;
+  height: 100%;
+  color: white;
+  background-color: black;
+  z-index: -2;
+}
+
+
+li{
+  list-style-type: none;
+}
+
+p{
+  margin: 10px 0;
+}
+
+footer{
+  margin-top: 30px;
+}
+
+.wrapper{
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/*global-menu*/
+.global-menu {
+  transition: box-shadow 0.3s ease-in;
+  margin-bottom: 10px;
+}
+
+.global-menu-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.item:hover{
+  color: red;
+}
+
+.global-menu-button {
+  display: none;
+}
+
+.global-menu .global-menu-list_show {
+  height: 100vh;
+}
+
+.no_sroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fixed_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(250, 240, 230, 1);
+  padding-bottom: 20px;
+  box-shadow: 0 2px 1px 1px rgba(100, 100, 100, 0.3);
+  width: 100%;
+}
+
+.fixed_menu .global-menu-list {
+  width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*dropdown menu*/
+.dropbutton {
+  cursor: pointer;
+  color: white;
+}
+
+/*html, body {
+  height: 100%;
+  overflow: hidden;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 150px;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all 1s;
+}
+
+.pc-dropdown {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.pc-dropdown:hover {
+  background-color: white;
+  color: red;
+}
+
+.dropbutton:hover .dropdown-content {
+  display: block;
+}
+.button1{
+  display: none;
+}
+
+.button2{
+  display: none;
+}/*./dropdown menu*/
+
+/*main-background*/
+.main-background{
+  background-image: url("C:/Users/Marion/Desktop/Web design/Site portfolio webdesign/日本語/img/background-books1.png");
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-text{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 2px 2px 3px black, -1px 0 black, 0 1px black, 0 -1px black;
+  color: #fffdda;
+}/*./main-background*/
+/*titles*/
+h2.about_tittle{
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h2.portfolio-title1{
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+h2.portfolio-title2{
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+.sub-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}/*./titles*/
+
+.name{margin: 20px 0 30px 0;}
+
+/*galleries*/
+div.gallery1{
+  margin: 0 auto;
+  width: 968px;
+}
+
+div.gallery1-item{
+  display: block;
+  margin: 50px 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 968px;
+}
+
+div.gallery1-item:hover{
+  border: 1px solid darkred;
+  box-shadow: 4px 4px 3px darkred;
+}
+
+div.gallery1-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+div.desc1 {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery2{
+  margin: 0 auto;
+  width: 968px;
+}
+
+div.gallery2-item{
+  display: block;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 968px;
+}
+
+div.gallery2-item:hover{
+  border: 1px solid red;
+}
+
+div.gallery2-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+div.desc2 {
+  padding: 15px;
+  text-align: center;
+}
+
+/*diagrammes compétences*/
+.skill1{
+  width: 600px;
+  height: auto;
+}
+
+.skill2{
+  width: 600px;
+  height: auto;
+}
+
+.skill3{
+  display: none;
+}
+
+.skill4{
+  display: none;
+}
+
+.hobby{
+  width: 600px;
+  height: auto;
+}
+
+.hobby2{
+  display: none;
+}
+
+/*sub-menu => prbl mise en page à régler*/
+.sub-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-menu li{width: 150px;}
+
+.sub-menu li a{
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.sub-menu li a:hover{color: red;}
+
+@media screen and (max-width:768px){
+  body{
+    margin-right: 2%;
+    margin-left: 2%;
+    background-color: linen;
+    color: black;
+  }
+}
+
+@media screen and (max-width:768px){
+  .wrapper{
+    width: 100%;
+  }
+  h2.about_tittle{
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .global-menu {
+    position: absolute;
+    top: 103px;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .global-menu-list {
+    transition: all 0.5s ease-in;
+    margin-top: 0;
+    height: 0;
+    background-color: rgba(250, 240, 230, 0.8);
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .item {
+  width: 100%;
+  padding: 16px 0;
+  height: auto;
+  border-top: 1px solid black;
+  color: black;
+}
+
+  .global-menu-button {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .dropbutton {
+    color: black;
+  }
+  .dropdown-content{
+    display: flex;
+    position: static;
+    box-shadow: none;
+    justify-content: space-around;
+    background-color: inherit;
+  }
+
+  .pc-dropdown {
+    display: none;
+    }
+
+  .button1{
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 0 0px;
+    border: none;
+    background-color: inherit;
+  }
+
+  .button1 a{
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+  }
+
+  .button1 a:hover {
+    border: 1px solid white;
+    }
+
+  .button2 {
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    border: none;
+    background-color: inherit;
+  }
+
+  .button2 a{
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+  }
+
+  .button2 a:hover {
+    border: 1px solid white;
+  }
+
+  .dropbutton:hover{
+    color: black;
+  }
+
+  .dropbutton:hover .dropdown-content {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .item.icon{
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .global-menu.responsive {
+    position: relative;
+  }
+
+  .item {
+    float: none;
+    display: block;
+  }
+
+  .global-menu.responsive .dropdown {
+    float: none;
+  }
+  .global-menu.responsive .dropdown-content {
+    position: relative;
+  }
+  .global-menu.responsive .dropdown .dropbutton {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}/*./global-menu*/
+
+@media screen and (max-width:768px) {
+  .main-background{
+    max-width: 100%;
+  }
+  /*rendre "hero-text" responsive*/
+  .hero-text{
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  div.gallery1{
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  div.gallery1-item{
+    float: none;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  div.gallery2{
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  div.gallery2-item{
+    float: none;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}/*./gallerie*/
+
+@media screen and (max-width:768px) {
+  .skill1{
+    display: none;
+  }
+
+  .skill2{
+  display: none;
+}
+
+  .skill3{
+    display: block;
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .skill4{
+    display: block;
+    width: 100%;
+    padding: 0 3%;
+  }
+}/*./diagrammes compétences*/
+
+@media screen and (max-width:768px){
+  .hobby{
+    display: none;
+  }
+
+  .hobby2{
+    display: block;
+    width: 100%;
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .sub-menu {
+    display: none;
+  }
+}/*./sub-menu*/
